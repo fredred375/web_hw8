@@ -1,0 +1,52 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 500px;
+  margin: auto;
+}
+
+.App-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-title h1 {
+  margin: 0;
+  margin-right: 20px;
+  font-size: 3em;
+}
+
+.App-title h2 {
+  margin: 0;
+  margin-right: 20px;
+  font-size: 2em;
+}
+
+.App-messages {
+  width: 100%;
+  height: 300px;
+  background: #eeeeee52;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  overflow: auto;
+}
+
+.App-receives {
+  width: 100%;
+  text-align: right;
+  margin-left: 10px;
+}
+
+.App-receives span {
+  padding-right: 10px;
+}
+
+.App-showcase {
+  width: 100%;
+  text-align: left;
+}

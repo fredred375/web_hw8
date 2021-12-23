@@ -1,0 +1,30 @@
+type Query {
+  posts(query: String): [Post!]!
+}
+
+type Mutation {
+  createPost(data: CreatePostInput!): Post!
+  deletePost(author: String!): String
+}
+
+type Subscription {
+  post: SubscriptionPost!
+  userPost(name: String!): SubscriptionPost!
+}
+
+input CreatePostInput {
+  author: String!
+  name: String!
+  message: String!
+}
+
+type Post {
+  author: String!
+  name: String!
+  message: String!
+}
+
+type SubscriptionPost {
+  mutation: String!
+  data: Post
+}
